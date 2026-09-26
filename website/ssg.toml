@@ -1,0 +1,16 @@
+site_name = "tsdev"
+site_title = "tsdev — Portable, Hardened TypeScript 5.8+ AI Developer Container"
+site_description = "Portable, hardened TypeScript development container with TMUX IDE, MCP AI agent tooling, pnpm, vtsls, Biome, Vitest, mobile WebTTY, and dotfiles bootstrap."
+base_url = "https://tsdev.hyperbox.run/"
+language = "en-GB"
+
+content_dir = "content"
+template_dir = "_layouts"
+output_dir = "public"
+
+[agents]
+agents_txt = true
+ai_plugin = true
+
+[agents.mcp]
+enabled = true

@@ -1,0 +1,231 @@
+---
+layout: index
+title: "tsdev — Portable, Hardened TypeScript 5.8+ AI Developer Container"
+description: "Hardened TypeScript container preloaded with pnpm, vtsls, Biome, Vitest, 4-pane TMUX IDE, and stdio MCP server."
+eyebrow: "TypeScript Stack"
+author: "Sebastien Rousseau"
+name: "tsdev"
+headline: "Hardened TypeScript 5.8+ Development Container for AI Agents"
+lead: "Fast, hermetic TypeScript container preloaded with pnpm, vtsls language server, Biome, Vitest, 4-pane TMUX IDE, and stdio Model Context Protocol (MCP) server."
+permalink: "/"
+language: "en-GB"
+date: "2026-09-26"
+---
+
+<section id="overview" class="section">
+  <div class="container text-center">
+    <h2 class="section-title">Engineered for TypeScript Developers & Terminal AI Agents</h2>
+    <p class="section-desc">Strict type-checking workflows powered by vtsls LSP, Biome formatting, Vitest, and native MCP container tooling.</p>
+    <div class="grid-2x2">
+      <div class="card">
+        <h3>TypeScript 5.8+ &amp; vtsls</h3>
+        <p>Pre-configured with Node.js 22 LTS, pnpm, TypeScript 5.8+, and the high-performance <code>vtsls</code> language server.</p>
+      </div>
+      <div class="card">
+        <h3>4-Pane TMUX IDE (Prefix + i)</h3>
+        <p>Instant IDE split layout with File Tree Explorer, Neovim (vtsls + Treesitter), bash terminal, and AI Agent pane.</p>
+      </div>
+      <div class="card">
+        <h3>Parallel AI Task Worktrees (muxtree)</h3>
+        <p>Automate Git worktrees paired with separate TMUX sessions for concurrent multi-agent and human feature branches.</p>
+      </div>
+      <div class="card">
+        <h3>Model Context Protocol (MCP)</h3>
+        <p>Stdio JSON-RPC 2.0 interface exposing TypeScript diagnostics, vitest execution, and repo tools to Claude Code and Cursor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quickstart" class="section">
+  <div class="container narrow">
+    <h2 class="section-title text-center">Quick Start in 30 Seconds</h2>
+    <p class="section-desc text-center">Disposable developer environment running anywhere Docker or Podman runs.</p>
+    <pre><code>&#35; 1. Clone the repository
+git clone https://github.com/sebastienrousseau/tsdev.git
+cd tsdev
+
+&#35; 2. Build and launch 4-pane TMUX IDE
+make up
+
+&#35; 3. Mobile WebTTY (port 7681) &amp; Mosh roaming
+make web
+make mosh</code></pre>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container text-center">
+    <h2 class="section-title">Core Developer Capabilities</h2>
+    <p class="section-desc">Full terminal-first development experience equipped with modern CLI productivity tools.</p>
+    <div class="grid-2x2">
+      <div class="card">
+        <h3>Biome Toolchain</h3>
+        <p>Sub-millisecond formatting and linting replacing Prettier and ESLint with Rust-powered performance.</p>
+      </div>
+      <div class="card">
+        <h3>Vitest Test Runner</h3>
+        <p>Ultra-fast ESM-native test runner with out-of-the-box TypeScript execution and snapshot testing.</p>
+      </div>
+      <div class="card">
+        <h3>OSC 52 Universal Clipboard</h3>
+        <p>Copy text from remote Neovim or TMUX sessions directly to your local system clipboard over SSH, WebTTY, or Mosh.</p>
+      </div>
+      <div class="card">
+        <h3>Deterministic Reproducibility</h3>
+        <p>Pinned tool versions, frozen lockfiles, immutable root filesystem, and hermetic container builds verified by CI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ai-ide" class="section">
+  <div class="container text-center">
+    <h2 class="section-title">AI Coding Agent Architecture</h2>
+    <p class="section-desc">Designed from first principles to empower local coding agents with standard protocols.</p>
+    <div class="grid-2x2">
+      <div class="card">
+        <h3>Model Context Protocol (MCP) Server</h3>
+        <p>Runs a native JSON-RPC 2.0 stdio server providing tools for file reading, file search, shell execution, and diagnostics.</p>
+      </div>
+      <div class="card">
+        <h3>Isolated Git Worktree Workflows</h3>
+        <p>Spawn ephemeral worktrees for AI tasks without dirtying your main working tree or breaking active development.</p>
+      </div>
+      <div class="card">
+        <h3>Sub-500ms Cold Start Startup</h3>
+        <p>Optimized image layers and pre-compiled configurations ensure instantaneous container boot and shell readiness.</p>
+      </div>
+      <div class="card">
+        <h3>Zero-Trust Capability Drop</h3>
+        <p>Runs as unprivileged user (UID 1000) with all root capabilities dropped (<code>cap_drop: [ALL]</code>) and read-only rootfs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="suite" class="section">
+  <div class="container">
+    <h2 class="section-title text-center">Unified Multi-Language Suite</h2>
+    <p class="section-desc text-center">Every container shares an identical security baseline, TMUX shortcuts, and MCP interfaces.</p>
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Container</th>
+            <th scope="col">Language Stack</th>
+            <th scope="col">Built-in Tooling</th>
+            <th scope="col">Version</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://langdev.hyperbox.run/" class="suite-link"><strong>langdev</strong></a></td>
+            <td>Core Foundation</td>
+            <td>TMUX IDE, MCP server, ai-pack, WebTTY, OSC 52</td>
+            <td>v0.0.4</td>
+          </tr>
+          <tr>
+            <td><a href="https://tsdev.hyperbox.run/" class="suite-link"><strong>tsdev</strong></a></td>
+            <td>TypeScript 5.8+</td>
+            <td>pnpm, vtsls, Biome, Vitest, TMUX IDE</td>
+            <td>v0.0.1</td>
+          </tr>
+          <tr>
+            <td><a href="https://jsdev.hyperbox.run/" class="suite-link"><strong>jsdev</strong></a></td>
+            <td>Node.js 22 LTS</td>
+            <td>Biome, ESLint, Prettier, Node test runner</td>
+            <td>v0.0.1</td>
+          </tr>
+          <tr>
+            <td><a href="https://pythondev.hyperbox.run/" class="suite-link"><strong>pythondev</strong></a></td>
+            <td>Python 3.12+</td>
+            <td>uv, ruff, mypy, pytest, debugpy, Pyright</td>
+            <td>v0.0.4</td>
+          </tr>
+          <tr>
+            <td><a href="https://rustdev.hyperbox.run/" class="suite-link"><strong>rustdev</strong></a></td>
+            <td>Rust 1.85+</td>
+            <td>rustup, rust-analyzer, clippy, cargo-audit, sccache</td>
+            <td>v0.0.4</td>
+          </tr>
+          <tr>
+            <td><a href="https://godev.hyperbox.run/" class="suite-link"><strong>godev</strong></a></td>
+            <td>Go 1.24+</td>
+            <td>gopls, golangci-lint, delve, Go toolchain</td>
+            <td>v0.0.4</td>
+          </tr>
+          <tr>
+            <td><a href="https://javadev.hyperbox.run/" class="suite-link"><strong>javadev</strong></a></td>
+            <td>Java 21+</td>
+            <td>OpenJDK 21, Maven, Gradle, JDTLS</td>
+            <td>v0.0.4</td>
+          </tr>
+          <tr>
+            <td><a href="https://kotlindev.hyperbox.run/" class="suite-link"><strong>kotlindev</strong></a></td>
+            <td>Kotlin 2.1+</td>
+            <td>kotlinc, OpenJDK 21, Gradle, Maven, KLS</td>
+            <td>v0.0.4</td>
+          </tr>
+          <tr>
+            <td><a href="https://swiftdev.hyperbox.run/" class="suite-link"><strong>swiftdev</strong></a></td>
+            <td>Swift 6.0+</td>
+            <td>Swift toolchain, SourceKit-LSP, swift-format</td>
+            <td>v0.0.4</td>
+          </tr>
+          <tr>
+            <td><a href="https://llamadev.hyperbox.run/" class="suite-link"><strong>llamadev</strong></a></td>
+            <td>Ollama &amp; Local LLMs</td>
+            <td>Ollama, Python 3.12, LiteLLM, HF CLI</td>
+            <td>v0.0.1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="security" class="section">
+  <div class="container text-center">
+    <h2 class="section-title">Zero-Trust Hardened Security</h2>
+    <p class="section-desc">Strict security guarantees verified in CI and container runtime.</p>
+    <div class="grid-2x2">
+      <div class="card">
+        <h3>Unprivileged Non-Root</h3>
+        <p>Runs as unprivileged dev user (UID/GID 1000). Drops all Linux capabilities (<code>cap_drop: [ALL]</code>) with <code>no-new-privileges:true</code>.</p>
+      </div>
+      <div class="card">
+        <h3>Read-Only Root Filesystem</h3>
+        <p>Immutable rootfs prevents container modification or persistent malware. Writable state is restricted to explicit tmpfs mounts.</p>
+      </div>
+      <div class="card">
+        <h3>Supply Chain Integrity</h3>
+        <p>Base images pinned to cryptographic SHA256 digests. Zero unpinned curl-to-sh scripts. Automated CycloneDX SBOM generation.</p>
+      </div>
+      <div class="card">
+        <h3>Hermetic CI &amp; SAST</h3>
+        <p>100% unit tested with Bats, ShellCheck linting, Hadolint OCI auditing, and Trivy CVE vulnerability scans.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container narrow">
+    <h2 class="section-title text-center">Frequently Asked Questions</h2>
+    <div class="faq-stack">
+      <div class="card">
+        <h3>Is pnpm store preserved across runs?</h3>
+        <p>Yes. Configurable cache volumes support persisting the pnpm global store for instantaneous package reinstallation.</p>
+      </div>
+      <div class="card">
+        <h3>How fast does the container start?</h3>
+        <p>Under 500 milliseconds cold start. Node.js 22, pnpm, and vtsls plugins are pre-baked into the image.</p>
+      </div>
+      <div class="card">
+        <h3>Can I run multiple language containers side by side?</h3>
+        <p>Yes. All containers in the suite use non-conflicting port mappings and shared worktree patterns for simultaneous multi-language development.</p>
+      </div>
+    </div>
+  </div>
+</section>
